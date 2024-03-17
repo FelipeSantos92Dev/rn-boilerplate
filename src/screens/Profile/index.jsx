@@ -16,6 +16,13 @@ export default function Profile() {
       >
         <Title title="Go to Home" />
       </TouchableOpacity>
+
+      <TouchableOpacity
+        style={styles.button}
+        onPress={() => navigation.navigate("Category")}
+      >
+        <Title title="Go to Category" />
+      </TouchableOpacity>
     </View>
   );
 }
