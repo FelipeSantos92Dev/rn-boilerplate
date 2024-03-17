@@ -1,28 +1,18 @@
-import { TouchableOpacity, View } from "react-native";
-import { useNavigation } from "@react-navigation/native";
+import { View } from "react-native";
 
 import styles from "./styles";
 import Title from "../../components/Title";
+import TouchButton from "../../components/TouchButton";
+import { user } from "../../data/Profile";
 
 export default function Category() {
-  const navigation = useNavigation();
   return (
     <View style={styles.container}>
       <Title title="Category" />
 
-      <TouchableOpacity
-        style={styles.button}
-        onPress={() => navigation.navigate("Home")}
-      >
-        <Title title="Go to Home" />
-      </TouchableOpacity>
+      <TouchButton route="Category" title="Go to Category" />
 
-      <TouchableOpacity
-        style={styles.button}
-        onPress={() => navigation.navigate("Profile")}
-      >
-        <Title title="Go to Profile" />
-      </TouchableOpacity>
+      <TouchButton route="Profile" title="Go to Profile" data={user} />
     </View>
   );
 }

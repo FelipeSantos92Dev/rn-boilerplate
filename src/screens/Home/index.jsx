@@ -1,5 +1,4 @@
-import { TouchableOpacity, View } from "react-native";
-import { useNavigation } from "@react-navigation/native";
+import { View } from "react-native";
 
 import styles from "./styles";
 import Title from "../../components/Title";
@@ -7,7 +6,6 @@ import { user } from "../../data/Profile";
 import TouchButton from "../../components/TouchButton";
 
 export default function Home() {
-  const navigation = useNavigation();
   return (
     <View style={styles.container}>
       <Title title="Home" />
