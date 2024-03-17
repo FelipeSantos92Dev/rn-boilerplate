@@ -61,7 +61,7 @@ Contribuições são sempre bem-vindas para melhorar o boilerplate. Veja como vo
 
 ## Licença
 
-Este projeto está licenciado sob a licença MIT - consulte o arquivo [LICENSE.md](LICENSE.md) para mais detalhes.
+Este projeto está licenciado sob a licença MIT - consulte o arquivo [LICENSE](LICENSE) para mais detalhes.
 
 ## Contato
 
