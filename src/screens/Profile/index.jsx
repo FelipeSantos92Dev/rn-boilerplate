@@ -6,7 +6,7 @@ import Title from "../../components/Title";
 
 export default function Profile({ route }) {
   const navigation = useNavigation();
-  const { user } = route.params;
+  const { data } = route.params;
 
   return (
     <View style={styles.container}>
@@ -28,11 +28,11 @@ export default function Profile({ route }) {
 
       <View style={styles.user}>
         <Title title="User" />
-        <Text style={styles.text}>{user.name}</Text>
-        <Text style={styles.text}>{user.email}</Text>
-        <Text style={styles.text}>{user.phone}</Text>
-        <Text style={styles.text}>{user.address.city}</Text>
-        <Text style={styles.text}>{user.address.state}</Text>
+        <Text style={styles.text}>{data.name}</Text>
+        <Text style={styles.text}>{data.email}</Text>
+        <Text style={styles.text}>{data.phone}</Text>
+        <Text style={styles.text}>{data.address.city}</Text>
+        <Text style={styles.text}>{data.address.state}</Text>
       </View>
     </View>
   );

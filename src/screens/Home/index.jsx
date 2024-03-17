@@ -4,6 +4,7 @@ import { useNavigation } from "@react-navigation/native";
 import styles from "./styles";
 import Title from "../../components/Title";
 import { user } from "../../data/Profile";
+import TouchButton from "../../components/TouchButton";
 
 export default function Home() {
   const navigation = useNavigation();
@@ -11,19 +12,9 @@ export default function Home() {
     <View style={styles.container}>
       <Title title="Home" />
 
-      <TouchableOpacity
-        style={styles.button}
-        onPress={() => navigation.navigate("Profile", { user })}
-      >
-        <Title title="Go to Profile" />
-      </TouchableOpacity>
+      <TouchButton route="Profile" title="Go to Profile" data={user} />
 
-      <TouchableOpacity
-        style={styles.button}
-        onPress={() => navigation.navigate("Category")}
-      >
-        <Title title="Go to Category" />
-      </TouchableOpacity>
+      <TouchButton route="Category" title="Go to Category" />
     </View>
   );
 }
